@@ -1,0 +1,53 @@
+<html>
+<body bgcolor="tan">
+<h1> JavaScript Classes</h1>
+<p>Creating 4 objects from a ITI class:</p>
+
+
+<p id="demo"></p>
+ <p id="demo1"></p>
+  <p id="demo2"></p>
+   <p id="demo3"></p>
+    <p id="demo4"></p>
+
+<script>
+class ITI  {
+  constructor(name,tt,tp,es,sm)  {
+     this.name = name;
+      this.tt = tt;
+       this.tp = tp;
+        this.es = es;
+         this.sm = sm;
+
+           }
+
+ tot()  {
+      return this.tt+this.tp+this.es+this.sm;
+    }
+
+ per()  {
+      return ((this.tt+this.tp+this.es+this.sm)/600)*100;
+   }
+}  
+
+myITI1 = new ITI("rihan",65,171,27,151);
+ myITI2 = new ITI("sriniwas",60,170,26,150);
+  myITI3 = new ITI("faizaan",64,169,25,149);
+   myITI4 = new ITI("sharath",63,168,24,148); 
+    myITI5 = new ITI("vikas",62,170,28,152);
+
+alert(myITI1.name);
+ alert(myITI1.tot());
+  alert(myITI1.per());
+
+
+document.getElementById("demo").innerHTML = myITI1.name + " " +myITI1.tot() + " " + myITI1.per();
+ document.getElementById("demo1").innerHTML = myITI2.name + " " +myITI2.tot() + " " + myITI2.per();
+  document.getElementById("demo2").innerHTML = myITI3.name + " " +myITI3.tot() + " " + myITI3.per();
+   document.getElementById("demo3").innerHTML = myITI4.name + " " +myITI4.tot() + " " + myITI4.per(); 
+    document.getElementById("demo4").innerHTML = myITI5.name + " " +myITI5.tot() + " " + myITI5.per(); 
+
+
+</script>
+</body>
+</html>
